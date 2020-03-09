@@ -12,7 +12,7 @@ import com.lemon.pojo.Case;
 public class DataUtils {
 
 	//成员变量
-	public static List<Case> caseList = ExcelUtils.read(Constant.EXCEL_PATH, 1, Case.class);
+	public static List<Case> caseList = ExcelUtils.read(Constant.EXCEL_PATH, 2, Case.class);
 	public static List<API> APIList = ExcelUtils.read(Constant.EXCEL_PATH, 0, API.class);
 	//{{API,Case},{API,Case}}
 	//根据ApiId获取一个接口，和对应的多个case
