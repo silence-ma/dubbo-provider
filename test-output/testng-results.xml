@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" total="12" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="柠檬商场" duration-ms="3701" started-at="2020-01-07T10:34:23Z" finished-at="2020-01-07T10:34:26Z">
+    <groups>
+    </groups>
+    <test name="订单模块" duration-ms="3701" started-at="2020-01-07T10:34:23Z" finished-at="2020-01-07T10:34:26Z">
+      <class name="com.lemon.cases.Login">
+        <test-method status="PASS" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.Login@63d4e2ba]" name="test" duration-ms="1952" started-at="2020-01-07T18:34:24Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=1, name=login, type=post, url=https://ea-uat.covestro.cn/api/TokenAuth/Authenticate, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=1, desc=传邮箱,不传密码, params={"email":"623115450@qq.com","password":""}, apiId=1]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.Login@63d4e2ba]" name="test" duration-ms="154" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=1, name=login, type=post, url=https://ea-uat.covestro.cn/api/TokenAuth/Authenticate, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=2, desc=不传邮箱，传密码, params={"email":"","password":"Sh@nghai123"}, apiId=1]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.Login@63d4e2ba]" name="test" duration-ms="148" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=1, name=login, type=post, url=https://ea-uat.covestro.cn/api/TokenAuth/Authenticate, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=3, desc=不合格的邮箱, params={"email":"jinjin.ma","password":""}, apiId=1]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.Login@63d4e2ba]" name="test" duration-ms="196" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=1, name=login, type=post, url=https://ea-uat.covestro.cn/api/TokenAuth/Authenticate, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=4, desc=合格的邮箱+不合格密码, params={"email":"623115450@qq.com","password":"123456"}, apiId=1]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.Login@63d4e2ba]" name="test" duration-ms="168" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=1, name=login, type=post, url=https://ea-uat.covestro.cn/api/TokenAuth/Authenticate, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=5, desc=合格邮箱+合格密码, params={"email":"623115450@qq.com","password":"Sh@nghai123"}, apiId=1]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.lemon.cases.Login -->
+      <class name="com.lemon.cases.CreateType">
+        <test-method status="FAIL" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.CreateType@3834d63f]" name="test" duration-ms="0" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=2, name=addContentType, type=post, url=https://ea-uat.covestro.cn/api/contentType/Add
+, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=6, desc=传内容类别，可用，ownerid，editorid, params={"typeName": "test-0109","isEnable": true,"owners": [8327],"editors": [14128]}, apiId=2]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:73)
+	at com.lemon.utils.HttpUtils.testPostJson(HttpUtils.java:89)
+	at com.lemon.utils.HttpUtils.call(HttpUtils.java:29)
+	at com.lemon.cases.CreateType.test(CreateType.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="FAIL" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.CreateType@3834d63f]" name="test" duration-ms="0" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=2, name=addContentType, type=post, url=https://ea-uat.covestro.cn/api/contentType/Add
+, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=7, desc=传内容类别，可用，不传ownerid, params={"typeName": "test-0109","isEnable": true,"owners":,"editors": [14128]}, apiId=2]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:73)
+	at com.lemon.utils.HttpUtils.testPostJson(HttpUtils.java:89)
+	at com.lemon.utils.HttpUtils.call(HttpUtils.java:29)
+	at com.lemon.cases.CreateType.test(CreateType.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="FAIL" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.CreateType@3834d63f]" name="test" duration-ms="1" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=2, name=addContentType, type=post, url=https://ea-uat.covestro.cn/api/contentType/Add
+, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=8, desc=传内容类别，可用，不传editorid, params={"typeName": "test-0109","isEnable": true,"owners": [8327],"editors":}, apiId=2]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:73)
+	at com.lemon.utils.HttpUtils.testPostJson(HttpUtils.java:89)
+	at com.lemon.utils.HttpUtils.call(HttpUtils.java:29)
+	at com.lemon.cases.CreateType.test(CreateType.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="FAIL" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.CreateType@3834d63f]" name="test" duration-ms="0" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=2, name=addContentType, type=post, url=https://ea-uat.covestro.cn/api/contentType/Add
+, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=9, desc=传内容类别，可用，传不存在ownerid, params={"typeName": "test-0109","isEnable": true,"owners": [1111],"editors": [22692]}, apiId=2]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:73)
+	at com.lemon.utils.HttpUtils.testPostJson(HttpUtils.java:89)
+	at com.lemon.utils.HttpUtils.call(HttpUtils.java:29)
+	at com.lemon.cases.CreateType.test(CreateType.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="FAIL" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.CreateType@3834d63f]" name="test" duration-ms="0" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=2, name=addContentType, type=post, url=https://ea-uat.covestro.cn/api/contentType/Add
+, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=10, desc=传内容类别，可用，传不存在editorid, params={"typeName": "test-0109","isEnable": true,"owners": [8327],"editors": [1111111]}, apiId=2]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:73)
+	at com.lemon.utils.HttpUtils.testPostJson(HttpUtils.java:89)
+	at com.lemon.utils.HttpUtils.call(HttpUtils.java:29)
+	at com.lemon.cases.CreateType.test(CreateType.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="FAIL" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.CreateType@3834d63f]" name="test" duration-ms="1" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=2, name=addContentType, type=post, url=https://ea-uat.covestro.cn/api/contentType/Add
+, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=11, desc=不传内容类别，可用，ownerid，editorid, params={"typeName": "","isEnable": true,"owners": [8327],"editors": [14128]}, apiId=2]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:73)
+	at com.lemon.utils.HttpUtils.testPostJson(HttpUtils.java:89)
+	at com.lemon.utils.HttpUtils.call(HttpUtils.java:29)
+	at com.lemon.cases.CreateType.test(CreateType.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="FAIL" signature="test(com.lemon.pojo.API, com.lemon.pojo.Case)[pri:0, instance:com.lemon.cases.CreateType@3834d63f]" name="test" duration-ms="1" started-at="2020-01-07T18:34:26Z" data-provider="datas" finished-at="2020-01-07T18:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API [apiId=2, name=addContentType, type=post, url=https://ea-uat.covestro.cn/api/contentType/Add
+, contentType=json]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Case [caseId=11, desc=重复的内容类别，可用，ownerid，editorid, params={"typeName": "test0108","isEnable": true,"owners": [8327],"editors": [14128]}, apiId=2]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:73)
+	at com.lemon.utils.HttpUtils.testPostJson(HttpUtils.java:89)
+	at com.lemon.utils.HttpUtils.call(HttpUtils.java:29)
+	at com.lemon.cases.CreateType.test(CreateType.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 46: https://ea-uat.covestro.cn/api/contentType/Add
+
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.lemon.cases.CreateType -->
+    </test> <!-- 订单模块 -->
+  </suite> <!-- 柠檬商场 -->
+</testng-results>
