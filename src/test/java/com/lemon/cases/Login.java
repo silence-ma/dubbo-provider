@@ -22,7 +22,7 @@ public class Login {
 	
 	@DataProvider(name="datas")
 	public Object[][] datas(){
-		Object[][] datas=DataUtils.getAPIAndCasdById("1");
+		Object[][] datas=DataUtils.getAPIAndCasdById("21");
 		return datas;
 		
 	}
